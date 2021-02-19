@@ -2,3 +2,4 @@ fernet
 scrapy
 requests
 bs4
+lxml
