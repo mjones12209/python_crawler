@@ -7,3 +7,7 @@
 ## And then run:
 
 `pip install -r requirements.txt`
+
+## Secret/Key Instructions
+
+`go here`
