@@ -1,0 +1,4 @@
+fernet
+scrapy
+requests
+bs4
