@@ -1,3 +1,3 @@
-cp video_card_checker.service video_card_checker.timer /usr/lib/systemd/system
+cp scrapyd.service scrapyd.timer /usr/lib/systemd/system
 systemctl daemon-reload
-systemctl enable --now video_card_checker.timer
+systemctl enable --now scrapyd.timer

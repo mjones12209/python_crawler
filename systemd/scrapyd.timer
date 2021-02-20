@@ -1,0 +1,8 @@
+Description=Run Crawler 5mins after boot and every hour afterward
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=1h
+
+[Install]
+WantedBy=timers.target
