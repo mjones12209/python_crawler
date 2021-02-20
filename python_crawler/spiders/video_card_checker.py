@@ -46,7 +46,7 @@ class VideoCardChecker (scrapy.Spider):
     def parse(self, response):
         self.send_email()
         #button
-        fulfillmentButton = response.css('button.add-to-cart-button::text').re(r'Sold Out')
+        fulfillmentButton = response.css('button.add-to-cart-button::text').re(r'Sold Out')[0]
         print("It worked")
         #condition when to email
         if (fulfillmentButton[0] != 'Sold Out'):
