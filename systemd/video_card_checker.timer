@@ -1,4 +1,4 @@
-Description=Run foo weekly and on boot
+Description=Run Crawler 5mins after boot and every hour afterward
 
 [Timer]
 OnBootSec=5min
