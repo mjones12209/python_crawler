@@ -5,10 +5,10 @@ After=network.target
 [Service]
 User=pi
 Group=pi
+Type=simple
 WorkingDirectory=/home/pi/git/python_crawler
 Environment="PATH=/home/pi/.local/bin"
 ExecStart=/home/pi/.local/bin/scrapy crawl VideoCardChecker
-Restart=always
 
 [Install]
 WantedBy=multi-user.target
