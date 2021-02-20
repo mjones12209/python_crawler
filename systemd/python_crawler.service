@@ -1,0 +1,12 @@
+[Unit]
+Description=Dummy Service
+After=multi-user.target
+Conflicts=getty@tty1.service
+
+[Service]
+Type=simple
+ExecStart=/home/pi/.local/bin/scrapy runspider /home/pi/git/python_crawler/python_crawler/spiders/vider_card_checker.py
+StandardInput=tty-force
+
+[Install]
+WantedBy=multi-user.target
